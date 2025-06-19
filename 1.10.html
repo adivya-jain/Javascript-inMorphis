@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiply and Divide</title>
+    <script>
+      function handleMultiple() {
+        const num1 = parseFloat(document.getElementById("num1").value);
+        const num2 = parseFloat(document.getElementById("num2").value);
+        alert("Multiplication Result: " + (num1 * num2));
+      }
+
+      function handleDivide() {
+        const num1 = parseFloat(document.getElementById("num1").value);
+        const num2 = parseFloat(document.getElementById("num2").value);
+        if (num2 === 0) {
+          alert("Cannot divide by zero!");
+        } else {
+          alert("Division Result: " + (num1 / num2));
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <label> Number 1</label>
+      <input type="number" id="num1" value="0" />
+    </div>
+    <div>
+      <label> Number 2</label>
+      <input type="number" id="num2" value="0" />
+    </div>
+
+    <button onclick="handleMultiple()">Multiply</button>
+    <button onclick="handleDivide()">Divide</button>
+  </body>
+</html>

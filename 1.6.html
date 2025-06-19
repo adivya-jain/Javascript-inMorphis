@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leap Year Checker</title>
+</head>
+<body>
+  <script>
+    const year = prompt("Enter the year (e.g., 2023):");
+
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+      console.log(`${year} is a leap year.`);
+    } else {
+      console.log(`${year} is not a leap year.`);
+    }
+  </script>
+</body>
+</html>
