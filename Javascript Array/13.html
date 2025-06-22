@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Item Adder</title>
+</head>
+<body>
+  <h2>JavaScript Program to Add Items to an Array</h2>
+  <button onclick="addItem()">Add Item</button>
+  <p id="output"></p>
+
+  <script>
+    let myArray = [];
+
+    function addItem() {
+      let item = prompt("Enter an item to add:");
+      if (item !== null && item.trim() !== '') {
+        myArray.push(item);
+        displayItems();
+      }
+    }
+
+    function displayItems() {
+      document.getElementById("output").innerText = "Current items: " + myArray.join(", ");
+    }
+  </script>
+</body>
+</html>
